@@ -1,0 +1,7 @@
+{
+  "success": true,
+  "message": "Success",
+  "data": {
+    "url": "https://example.com/payment"
+  }
+}
