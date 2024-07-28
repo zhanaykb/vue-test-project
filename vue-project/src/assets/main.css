@@ -1,0 +1,23 @@
+@import './base.css';
+@import './tailwind.css';
+
+#app {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 15px;
+  font-weight: normal;
+}
+
+@media (hover: hover) {
+
+}
+
+@media (min-width: 1024px) {
+  body {
+
+  }
+
+  #app {
+
+  }
+}

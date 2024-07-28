@@ -1,0 +1,32 @@
+
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  /*--vt-c-white: #ffffff;*/
+}
+
+/* semantic color variables for this project */
+:root {
+  --color-background: #ffffff
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /*--color-background: var(--vt-c-black);*/
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--color-background);
+  /*text-rendering: optimizeLegibility;*/
+  /*-webkit-font-smoothing: antialiased;*/
+  /*-moz-osx-font-smoothing: grayscale;*/
+}
