@@ -12,12 +12,12 @@
 
 }
 
-@media (min-width: 1024px) {
+@media (max-width: theme('screens.md')) {
   body {
 
   }
 
   #app {
-
+    padding: 25px 15px;
   }
 }

@@ -2,6 +2,7 @@ import type { Config } from 'tailwindcss'
 import plugin from "tailwindcss";
 import theme = require("tailwindcss/defaultTheme");
 import typographyPlugin from './src/utils/typography'
+
 export default {
   content: [
     "./index.html",
@@ -25,10 +26,12 @@ export default {
         gold: {
           dark: '#E2C299',
           light: '#C5A67C',
-        }
+        },
+        red: '#E86068'
       },
       spacing: {
         '3.7': '15px',
+        '6.5': '25px',
         '7.5': '30px'
       },
       borderRadius: {
