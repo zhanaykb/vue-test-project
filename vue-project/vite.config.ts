@@ -9,9 +9,13 @@ import tailwindcss from 'tailwindcss'
 export default defineConfig({
   plugins: [
     vue(),
-    vueJsx(),
-    tailwindcss()
+    vueJsx()
   ],
+  css: {
+    postcss: {
+      plugins: [tailwindcss()],
+    },
+  },
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))

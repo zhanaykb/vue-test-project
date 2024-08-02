@@ -57,10 +57,10 @@ const selectedCurrency = ref();
 </script>
 <style lang="scss" scoped>
   .card {
+    box-shadow: 0px 0px 15px 0px #0000000F;
     &:hover {
       box-shadow: 0px 0px 20px 0px #0000001A;
     }
-    box-shadow: 0px 0px 15px 0px #0000000F;
 
     &.active {
       border: 2px solid;

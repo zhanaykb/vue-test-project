@@ -31,9 +31,9 @@
 
 import IconClose from "@/shared/icons/IconClose.vue";
 import {computed, ref} from "vue";
-import { Money3Directive } from 'v-money3'
 import {parseCurrency} from "@/utils/parseCurrency";
-const inputEl = ref(null);
+
+const inputEl = ref<HTMLInputElement | null>(null);
 const isError = ref(false);
 const props = defineProps(['modelValue'])
 const emit = defineEmits(['update:modelValue'])
@@ -43,8 +43,8 @@ const value = computed({
     emit('update:modelValue', val);
   }
 })
-const redirectFocus = (e: FocusEvent) => {
-  if (inputEl.value && e.target.id === 'input-container-focus') {
+const redirectFocus = (e: MouseEvent) => {
+  if (inputEl.value && (e.target as HTMLDivElement).id === 'input-container-focus') {
     inputEl.value.focus();
   }
 }

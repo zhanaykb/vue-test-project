@@ -1,3 +1,5 @@
+import type { JSX } from "vue/jsx-runtime";
+
 export enum PaymentMethodsEnum {
   RF_CARD,
   MIR_CARD ,
@@ -16,7 +18,7 @@ export enum PaymentMethodsEnum {
   ANOTHER_CARD ,
 }
 
-export const paymentMethodsRecord: Record<PaymentMethodsEnum, { name: string, icon: Element, percent: number }> = {
+export const paymentMethodsRecord: Record<PaymentMethodsEnum, { name: string, icon: JSX.Element, percent: number }> = {
   [PaymentMethodsEnum.RF_CARD]: {
     name: 'Картой РФ',
     icon: <>

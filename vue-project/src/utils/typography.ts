@@ -13,7 +13,7 @@ export default plugin(({ addComponents, theme }) => {
     '.typography-title2': {
       fontSize: '14px',
       lineHeight: '16.41px',
-      fontWeight: 400,
+      fontWeight: '400',
       '@screen md': {
         fontSize: '20px',
         lineHeight: '23.44px',
